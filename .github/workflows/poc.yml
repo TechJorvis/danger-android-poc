@@ -21,9 +21,12 @@ jobs:
             uses: actions/setup-java@v1
             with:
               java-version: 1.8
+          
+          - name: Go to project directory
+            run: cd Danger
         
           - name: Set execution flag for gradlew
-            run: chmod +x ./Danger/gradlew
+            run: chmod +x gradlew
    
           - name: Build with Gradle
-            run: ./Danger/gradlew build
+            run: ./gradlew build
