@@ -1,10 +1,9 @@
-// {
-//     "compilerOptions": {
-//         "skipLibCheck": true,
-//         "target": "es6",
-//         "module": "commonjs",
-//         "moduleResolution": "node",
-//         "esModuleInterop": true,
-//         "rootDirs": [".", "./danger-rules"]
-//     }
-// }
+{
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+    }
+}
