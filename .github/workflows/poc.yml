@@ -46,11 +46,8 @@ jobs:
           uses: actions/setup-node@v1
           with:
             node-version: 12.x
-        
-        - name: yarn install
-          run: yarn install
     
         - name: Danger
-          run: yarn danger ci
+          run: npx danger ci
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
