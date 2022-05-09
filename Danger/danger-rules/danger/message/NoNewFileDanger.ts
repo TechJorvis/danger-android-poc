@@ -3,7 +3,7 @@ import { DangerType } from "../../constants/DangerType";
 import { MessageNotificationChannel } from "../../danger_notifier/MessageNotificationChannel";
 import { Danger } from "../Danger";
 
-class NoNewFileDanger extends Danger {
+export class NoNewFileDanger extends Danger {
 
     readonly msg: string = "No New Files in this PR."
 
@@ -22,5 +22,3 @@ class NoNewFileDanger extends Danger {
         return isDanger;
     }
 }
-
-export = NoNewFileDanger;
