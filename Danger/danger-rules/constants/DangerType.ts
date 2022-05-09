@@ -1,4 +1,4 @@
-export const enum Feedback {
+export const enum DangerType {
     Fail,
     Message,
     Warn
