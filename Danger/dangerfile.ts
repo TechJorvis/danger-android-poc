@@ -11,20 +11,20 @@ if (newFiles && newFiles.length > 0) {
 }
 
 if (modifiedFiles && modifiedFiles.length > 0) {
-    message("Modified Files in this PR: \n" + modifiedFiles.join("- "));
+    // message("Modified Files in this PR: \n" + modifiedFiles.join("- "));
     
     modifiedFiles.forEach(value => {
-        message("=> File:" + value + "\n");
+        message("Modified File: " + value + "\n");
     });
 } else {
     message("No files were modified in this PR.");
 }
 
 if (deletedFiles && deletedFiles.length > 0) {
-    message("Deleted Files in this PR: \n" + modifiedFiles.join("- "));
+    // message("Deleted Files in this PR: \n" + modifiedFiles.join("- "));
 
     deletedFiles.forEach(value => {
-        message("=> File:" + value + "\n");
+        message("Deleted File: " + value + "\n");
     });
 } else {
     message("No files were deleted in this PR.");
