@@ -1,4 +1,3 @@
-import { danger } from "danger";
 import { NoNewFileDanger } from "./danger-rules/danger/message/NoNewFileDanger"
 import { IncorrectPRTitleDanger } from "./danger-rules/danger/warn/IncorrectPRTitle";
 
