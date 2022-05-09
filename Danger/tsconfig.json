@@ -1,6 +1,10 @@
 {
     "compilerOptions": {
-        "target": "esnext",
-        "module": "esnext"
+        "skipLibCheck": true,
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "rootDirs": [".", "./danger-rules"]
     }
 }
