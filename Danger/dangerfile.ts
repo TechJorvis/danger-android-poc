@@ -1,5 +1,5 @@
 import { NoNewFileDanger } from "./danger-rules/danger/message/NoNewFileDanger"
-import { IncorrectPRTitleDanger } from "./danger-rules/danger/warn/IncorrectPRTitle";
+import { IncorrectPRTitleDanger } from "./danger-rules/danger/warn/IncorrectPRTitle"
 
 new NoNewFileDanger()
     .checkAndNotify("No New Files in this PR.");
