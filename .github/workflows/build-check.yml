@@ -25,6 +25,26 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
   
+  # dangerjs-check:
+  #   runs-on: ubuntu-latest
+
+  #   defaults:
+  #     run:
+  #       working-directory: ./Danger
+    
+  #   steps:
+  #     - uses: actions/checkout@master
+      
+  #     - name: Use Node.js 12.x
+  #       uses: actions/setup-node@v1
+  #       with:
+  #         node-version: 12.x
+  
+  #     - name: Danger
+  #       run: npx danger ci
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   dangerjs-check:
     runs-on: ubuntu-latest
 
@@ -33,14 +53,9 @@ jobs:
         working-directory: ./Danger
     
     steps:
-      - uses: actions/checkout@master
-      
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
+      - uses: actions/checkout@v2.4.0
   
       - name: Danger
-        run: npx danger ci
+        uses: danger/danger-js@9.1.6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
