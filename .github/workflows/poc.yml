@@ -32,7 +32,7 @@ jobs:
           - name: Build with Gradle
             run: ./gradlew build
     
-    test:
+    sanityCheck:
       runs-on: ubuntu-latest
 
       defaults:
@@ -46,8 +46,11 @@ jobs:
           uses: actions/setup-node@v1
           with:
             node-version: 12.x
+        
+        - name: yarn install
+          run: yarn install
     
         - name: Danger
-          run: npx danger ci
+          run: yarn danger ci
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
