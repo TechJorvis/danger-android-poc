@@ -13,7 +13,7 @@ class BaseDanger {
     }
 
     checkAndNotify(msg) {
-        if (this.isDanger) {
+        if (this.isDanger()) {
             this.notify(msg);
             return true;
         }
