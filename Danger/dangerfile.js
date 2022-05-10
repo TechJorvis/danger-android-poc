@@ -1,13 +1,13 @@
-import { NoNewFileDanger } from "./danger-rules/danger/message/NoNewFileDanger"
-import { IncorrectPRTitleDanger } from "./danger-rules/danger/warn/IncorrectPRTitle"
+const NoNewFileDanger = require("./danger-rules/danger/message/NoNewFileDanger");
+const IncorrectPRTitleDanger = require("./danger-rules/danger/warn/IncorrectPRTitle");
 
-new NoNewFileDanger()
-    .checkAndNotify("No New Files in this PR.");
+new NoNewFileDanger();
+    // .checkAndNotify("No New Files in this PR.");
 
-new IncorrectPRTitleDanger()
-    .checkAndNotify("Incorrect PR Title. PR Title should be in the format => \"[Ticket-ID] [Type] Title\"")
+new IncorrectPRTitleDanger();
+    // .checkAndNotify("Incorrect PR Title. PR Title should be in the format => \"[Ticket-ID] [Type] Title\"")
 
-
+console.log("All okay!");
 
 
 
