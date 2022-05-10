@@ -1,9 +1,9 @@
 // const danger = require("danger");
 const DangerType = require("../../constants/DangerType");
 const WarningNotificationChannel = require("../../danger_notifier/WarningNotificationChannel");
-const Danger = require("../Danger");
+const BaseDanger = require("../BaseDanger");
 
-class IncorrectPRTitleDanger extends Danger {
+class IncorrectPRTitleDanger extends BaseDanger {
 
     static PR_TITLE_REGEX = /(\[[A-Za-z]+-[0-9]+\])\s(\[[A-Za-z]+\])\s([A-Za-z0-9]+)$/g;
 

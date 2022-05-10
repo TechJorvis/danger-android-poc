@@ -1,4 +1,4 @@
-class Danger {
+class BaseDanger {
 
     dangerType;
     notificationChannel;
@@ -30,4 +30,4 @@ class Danger {
     }
 }
 
-module.exports = Danger;
+module.exports = BaseDanger;

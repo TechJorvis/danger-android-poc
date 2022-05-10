@@ -1,8 +1,8 @@
 const DangerType = require("../../constants/DangerType");
 const MessageNotificationChannel = require("../../danger_notifier/MessageNotificationChannel");
-const Danger = require("../Danger");
+const BaseDanger = require("../BaseDanger");
 
-class NoNewFileDanger extends Danger {
+class NoNewFileDanger extends BaseDanger {
 
     msg = "No New Files in this PR."
 
